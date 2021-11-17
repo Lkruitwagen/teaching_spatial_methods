@@ -14703,7 +14703,8 @@ div.jp-OutputPrompt {
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Introduction:-Neighbours,-Diffusion,-and-Spatial-Autocorrelation">Introduction: Neighbours, Diffusion, and Spatial Autocorrelation<a class="anchor-link" href="#Introduction:-Neighbours,-Diffusion,-and-Spatial-Autocorrelation">&#182;</a></h1><h2 id="Why-is-are-spatial-methods-different-than-other-statistical-methods?">Why is are spatial methods different than other statistical methods?<a class="anchor-link" href="#Why-is-are-spatial-methods-different-than-other-statistical-methods?">&#182;</a></h2>
+<h1 id="Introduction:-Neighbours,-Diffusion,-and-Spatial-Autocorrelation">Introduction: Neighbours, Diffusion, and Spatial Autocorrelation<a class="anchor-link" href="#Introduction:-Neighbours,-Diffusion,-and-Spatial-Autocorrelation">&#182;</a></h1><p><a id='introduction'></a></p>
+<h2 id="Why-is-are-spatial-methods-different-than-other-statistical-methods?">Why is are spatial methods different than other statistical methods?<a class="anchor-link" href="#Why-is-are-spatial-methods-different-than-other-statistical-methods?">&#182;</a></h2>
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14863,18 +14864,18 @@ div.jp-OutputPrompt {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Contents">Contents<a class="anchor-link" href="#Contents">&#182;</a></h1><ul>
-<li><a href="#Introduction-Neighbours-Diffusion-and-Spatial-Autocorrelation">Introduction: Neighbours, Diffusion, and Spatial Autocorrelation</a></li>
+<li><a href="#introduction">Introduction: Neighbours, Diffusion, and Spatial Autocorrelation</a></li>
 <li><a href="#tools">Tools and Setup</a></li>
-<li><a href="#Key-Lesson-0--Map-Projections">Key Lesson 0: Map Projections</a></li>
-<li><a href="#Key-Lesson-1--Modifiable-Areal-Unit-Problem">Key Lesson 1: Modifiable Areal Unit Problem</a></li>
-<li><a href="#Key-Lesson-2--The-Political-Boundary-Problem">Key Lesson 2: The Political Boundary Problem</a></li>
-<li><a href="#Key-Lesson-3--The-Scale-Problem">Key Lesson 3: The Scale Problem</a></li>
-<li><a href="#Key-Lesson-4--Returning-to-Spatial-Autocorrelation">Key Lesson 4: Returning to Spatial Autocorrelation</a></li>
-<li><a href="#Tutorial-0--Vector-data-basics">Tutorial 0: Vector data basics</a></li>
-<li><a href="#Tutorial-1--Reading--Analysis--and-Writing-Vector-Data">Tutorial 1: Reading, Analysis, and Writing Vector Data</a></li>
-<li><a href="#Tutorial-2--Reading-and-Writing-Raster-Data">Tutorial 2: Reading and Writing Raster Data</a></li>
-<li><a href="#Tutorial-3-Spatial-Joins">Tutorial 3: Spatial Sampling</a></li>
-<li><a href="#Tutorial-4--Spatial-Regression">Tutorial 4: Spatial Regression</a></li>
+<li><a href="#key-lesson-0">Key Lesson 0: Map Projections</a></li>
+<li><a href="#key-lesson-1">Key Lesson 1: Modifiable Areal Unit Problem</a></li>
+<li><a href="#key-lesson-2">Key Lesson 2: The Political Boundary Problem</a></li>
+<li><a href="#key-lesson-3">Key Lesson 3: The Scale Problem</a></li>
+<li><a href="#key-lesson-4">Key Lesson 4: Returning to Spatial Autocorrelation</a></li>
+<li><a href="#tutorial-0">Tutorial 0: Vector data basics</a></li>
+<li><a href="#tutorial-1">Tutorial 1: Reading, Analysis, and Writing Vector Data</a></li>
+<li><a href="#tutorial-2">Tutorial 2: Reading and Writing Raster Data</a></li>
+<li><a href="#tutorial-3">Tutorial 3: Spatial Sampling</a></li>
+<li><a href="#tutorial-4">Tutorial 4: Spatial Regression</a></li>
 </ul>
 
 </div>
@@ -14891,7 +14892,8 @@ div.jp-OutputPrompt {
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Python:-Setup-with-Google-Colab">Python: Setup with Google Colab<a class="anchor-link" href="#Python:-Setup-with-Google-Colab">&#182;</a></h1><p>What's Colab? <a href="https://colab.research.google.com/">https://colab.research.google.com/</a> is a <a href="https://jupyter.org/">Jupyter notebook</a> hosted by Google. It's an interactive Python environment that allows us to easily prototype and share code. For deep learning I can also easily connect a small GPU to my notebook instance. Being in the Google ecosystem means I can easily connect to Google services like Drive.</p>
+<h1 id="Python:-Setup-with-Google-Colab">Python: Setup with Google Colab<a class="anchor-link" href="#Python:-Setup-with-Google-Colab">&#182;</a></h1><p><a id='setup'></a></p>
+<p>What's Colab? <a href="https://colab.research.google.com/">https://colab.research.google.com/</a> is a <a href="https://jupyter.org/">Jupyter notebook</a> hosted by Google. It's an interactive Python environment that allows us to easily prototype and share code. For deep learning I can also easily connect a small GPU to my notebook instance. Being in the Google ecosystem means I can easily connect to Google services like Drive.</p>
 <p>What's so great about Juypter? Code is executed in 'cells' which means that the data stays in memory and I don't need to run a script from the start every time I change a small thing. It also allows me to conveniently write documentation in <code>Markdown</code>.</p>
 
 </div>
@@ -14912,19 +14914,16 @@ div.jp-OutputPrompt {
 <p>Let's get started. To begin we install our requirements, a combination of linux packages installed with <code>apt install</code> and Python packages installed using <code>pip install</code>. The <code>!</code> indicates we want to use 'command-line magic'. Google Colab doesn't give us direct access to the Terminal, so we use command-line magic whenever we want to execute commandline tasks.</p>
 
 </div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div></div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Installations - uncomment the &#39;apt&#39; instructions if using Google colab</span>
-<span class="c1">#!sudo apt-get update</span>
-<span class="c1">#!sudo apt install gdal-bin python-gdal python3-gdal </span>
-<span class="o">!</span>pip install rasterio
-<span class="c1">#!sudo apt install python3-rtree </span>
-<span class="o">!</span>pip install git+git://github.com/geopandas/geopandas.git
-<span class="o">!</span>pip install descartes
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Apt Installations - Jupyter</span>
+<span class="o">!</span>apt-get update
+<span class="o">!</span>sudo apt install gdal-bin python-gdal python3-gdal 
+<span class="o">!</span>sudo apt install python3-rtree 
 </pre></div>
 
      </div>
@@ -14932,31 +14931,38 @@ div.jp-OutputPrompt {
 </div>
 </div>
 
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install ipyleaflet
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Apt Installations - Google Colab</span>
+<span class="o">!</span>apt install gdal-bin python-gdal python3-gdal 
+<span class="o">!</span>apt install python3-rtree 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># pip installations</span>
+<span class="o">!</span>pip install rasterio
+<span class="o">!</span>pip install git+git://github.com/geopandas/geopandas.git
+<span class="o">!</span>pip install descartes
+<span class="o">!</span>pip install ipyleaflet
 <span class="o">!</span>pip install geojson
 <span class="o">!</span>pip install mapclassify
 <span class="o">!</span>pip install geopy
 <span class="o">!</span>pip install pygeos
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install pysal
+<span class="o">!</span>pip install pysal
 <span class="o">!</span>pip install spreg
 </pre></div>
 
@@ -14965,7 +14971,7 @@ div.jp-OutputPrompt {
 </div>
 </div>
 
-</div></div></section><section>
+</div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>What did we just install? We used <code>apt</code> to install C packages and their Python bindings. With spatial analysis, Python sometimes uses underlying C libraries so we need to go beyond the usual Python-only libraries.</p>
@@ -14993,12 +14999,14 @@ div.jp-OutputPrompt {
 <span class="kn">from</span> <span class="nn">shapely</span> <span class="kn">import</span> <span class="n">geometry</span>
 <span class="kn">from</span> <span class="nn">shapely.ops</span> <span class="kn">import</span> <span class="n">transform</span>
 <span class="kn">import</span> <span class="nn">pyproj</span>
-<span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">GeoData</span><span class="p">,</span> <span class="n">basemaps</span><span class="p">,</span> <span class="n">LayersControl</span>
 <span class="kn">import</span> <span class="nn">geojson</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span> <span class="k">as</span> <span class="n">mse</span>
 <span class="kn">from</span> <span class="nn">geopy.distance</span> <span class="kn">import</span> <span class="n">geodesic</span><span class="p">,</span> <span class="n">great_circle</span>
-<span class="c1"># need to enable third-party widgets to use ipyleaflet within Colab</span>
-<span class="c1"># --&gt; if using colab</span>
+
+<span class="c1"># optionally import our ipyleaflet widget</span>
+<span class="c1">#from ipyleaflet import Map, GeoData, basemaps, LayersControl</span>
+
+<span class="c1"># On colab need to enable third party widgets:</span>
 <span class="c1">#from google.colab import output</span>
 <span class="c1">#output.enable_custom_widget_manager()</span>
 </pre></div>
@@ -15049,7 +15057,8 @@ div.jp-OutputPrompt {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sudo apt-get install unzip
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Option 1 Jupyter (built-in on colab):</span>
+<span class="o">!</span>sudo apt-get install unzip
 </pre></div>
 
      </div>
@@ -15094,7 +15103,7 @@ div.jp-OutputPrompt {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># set our root path that we&#39;ll use for file io in the tutorial</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Then: set our root path that we&#39;ll use for file io in the tutorial</span>
 <span class="n">root</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;/home/lucas/teaching_spatial_methods&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -15106,7 +15115,8 @@ div.jp-OutputPrompt {
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Key-Lesson-0:-Map-Projections">Key Lesson 0: Map Projections<a class="anchor-link" href="#Key-Lesson-0:-Map-Projections">&#182;</a></h1>
+<h1 id="Key-Lesson-0:-Map-Projections">Key Lesson 0: Map Projections<a class="anchor-link" href="#Key-Lesson-0:-Map-Projections">&#182;</a></h1><p><a id='key-lesson-0'></a></p>
+
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -15295,7 +15305,8 @@ div.jp-OutputPrompt {
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Key-Lesson-1:-Modifiable-Areal-Unit-Problem">Key Lesson 1: Modifiable Areal Unit Problem<a class="anchor-link" href="#Key-Lesson-1:-Modifiable-Areal-Unit-Problem">&#182;</a></h1>
+<h1 id="Key-Lesson-1:-Modifiable-Areal-Unit-Problem">Key Lesson 1: Modifiable Areal Unit Problem<a class="anchor-link" href="#Key-Lesson-1:-Modifiable-Areal-Unit-Problem">&#182;</a></h1><p><a id='key-lesson-1'></a></p>
+
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -15356,7 +15367,8 @@ div.jp-OutputPrompt {
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Key-Lesson-2:-The-Political-Boundary-Problem">Key Lesson 2: The Political Boundary Problem<a class="anchor-link" href="#Key-Lesson-2:-The-Political-Boundary-Problem">&#182;</a></h1>
+<h1 id="Key-Lesson-2:-The-Political-Boundary-Problem">Key Lesson 2: The Political Boundary Problem<a class="anchor-link" href="#Key-Lesson-2:-The-Political-Boundary-Problem">&#182;</a></h1><p><a id='key-lesson-2'></a></p>
+
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -15437,7 +15449,8 @@ The use of administrative boundaries for spatial analysis imposes several proble
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Key-Lesson-3:-The-Scale-Problem">Key Lesson 3: The Scale Problem<a class="anchor-link" href="#Key-Lesson-3:-The-Scale-Problem">&#182;</a></h1>
+<h1 id="Key-Lesson-3:-The-Scale-Problem">Key Lesson 3: The Scale Problem<a class="anchor-link" href="#Key-Lesson-3:-The-Scale-Problem">&#182;</a></h1><p><a id='key-lesson-3'></a></p>
+
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -15482,7 +15495,8 @@ The use of administrative boundaries for spatial analysis imposes several proble
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Key-Lesson-4:-Returning-to-Spatial-Autocorrelation">Key Lesson 4: Returning to Spatial Autocorrelation<a class="anchor-link" href="#Key-Lesson-4:-Returning-to-Spatial-Autocorrelation">&#182;</a></h1>
+<h1 id="Key-Lesson-4:-Returning-to-Spatial-Autocorrelation">Key Lesson 4: Returning to Spatial Autocorrelation<a class="anchor-link" href="#Key-Lesson-4:-Returning-to-Spatial-Autocorrelation">&#182;</a></h1><p><a id='key-lesson-4'></a></p>
+
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -15622,7 +15636,8 @@ textbook</p>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Tutorial-0:-Vector-data-basics.">Tutorial 0: Vector data basics.<a class="anchor-link" href="#Tutorial-0:-Vector-data-basics.">&#182;</a></h1><p>Do you live close enough to Carfax? In this tutorial we'll explore whether we live within the <a href="https://academic.admin.ox.ac.uk/residency#:~:text=In%20general%2C%20PGR%20students%20must,and%20approved%20by%20the%20department">University limits</a>.</p>
+<h1 id="Tutorial-0:-Vector-data-basics.">Tutorial 0: Vector data basics.<a class="anchor-link" href="#Tutorial-0:-Vector-data-basics.">&#182;</a></h1><p><a id='tutorial-0'></a></p>
+<p>Do you live close enough to Carfax? In this tutorial we'll explore whether we live within the <a href="https://academic.admin.ox.ac.uk/residency#:~:text=In%20general%2C%20PGR%20students%20must,and%20approved%20by%20the%20department">University limits</a>.</p>
 
 </div>
 </div></section><section>
@@ -15812,7 +15827,8 @@ textbook</p>
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Tutorial-1:-Reading,-Analysis,-and-Writing-Vector-Data">Tutorial 1: Reading, Analysis, and Writing Vector Data<a class="anchor-link" href="#Tutorial-1:-Reading,-Analysis,-and-Writing-Vector-Data">&#182;</a></h1><p>A core principle of economic geography is the complex spatial relationships of economic phenomena - leading to, for example, path dependency and lock-in of infrastructure. In this tutorial we'll calculate the distance between wind farm installations in the US and the US transmission grid.</p>
+<h1 id="Tutorial-1:-Reading,-Analysis,-and-Writing-Vector-Data">Tutorial 1: Reading, Analysis, and Writing Vector Data<a class="anchor-link" href="#Tutorial-1:-Reading,-Analysis,-and-Writing-Vector-Data">&#182;</a></h1><p><a id='tutorial-1'></a></p>
+<p>A core principle of economic geography is the complex spatial relationships of economic phenomena - leading to, for example, path dependency and lock-in of infrastructure. In this tutorial we'll calculate the distance between wind farm installations in the US and the US transmission grid.</p>
 
 </div>
 </div></section><section>
@@ -16136,7 +16152,8 @@ textbook</p>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Tutorial-2:-Reading-and-Writing-Raster-Data.">Tutorial 2: Reading and Writing Raster Data.<a class="anchor-link" href="#Tutorial-2:-Reading-and-Writing-Raster-Data.">&#182;</a></h1><p><a href="https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index">Normalised-Difference Vegetation Index</a> is an important metric for assessing vegetation health and growth over large areas using satellite data. Let's compare NDVI between Oxford summer and winter.</p>
+<h1 id="Tutorial-2:-Reading-and-Writing-Raster-Data.">Tutorial 2: Reading and Writing Raster Data.<a class="anchor-link" href="#Tutorial-2:-Reading-and-Writing-Raster-Data.">&#182;</a></h1><p><a id='tutorial-2'></a></p>
+<p><a href="https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index">Normalised-Difference Vegetation Index</a> is an important metric for assessing vegetation health and growth over large areas using satellite data. Let's compare NDVI between Oxford summer and winter.</p>
 <p>We've prepared some GeoTIFF data in the data package, two sample AOIs over Oxford on lightly-cloudy days 2019-12-23 for the winter, and 2020-08-22 for the summer. Both images are from Sentinel-2 multispectral satellite and have been atmosphere corrected.</p>
 <p>Sentinel-2 data is obtained with multiple <code>bands</code> corresponding to the sensor's capture of light at different wavelengths. This data has bands 2, 3, 4, and 8 which correspond, respectively, to blue, green, and red visible light, and near-infrared, all sampled at 10m/pixel.</p>
 
@@ -16613,7 +16630,8 @@ I've made a geojson of port meadow using <a href="http://geojson.io/#map=14/51.7
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Tutorial-3:-Spatial-Sampling">Tutorial 3: Spatial Sampling<a class="anchor-link" href="#Tutorial-3:-Spatial-Sampling">&#182;</a></h1><p><strong>The impact of spatial scale on land cover mapping.</strong></p>
+<h1 id="Tutorial-3:-Spatial-Sampling">Tutorial 3: Spatial Sampling<a class="anchor-link" href="#Tutorial-3:-Spatial-Sampling">&#182;</a></h1><p><a id='tutorial-3'></a></p>
+<p><strong>The impact of spatial scale on land cover mapping.</strong></p>
 <p>Solar PV began growing very rapidly in the Netherlands in the late 2010s. The Netherlands is a small country with a complex urban-rural patchwork of land use. Previously, as in Kruitwagen et al. [<a href="https://www.nature.com/articles/s41586-021-03957-7">1</a>], only 100m landcover products were globally available, however in 2021, three 10m global landcover products using Sentinel-2 data were published. Let's see how the different scale of these products impacts our measurement of the land cover impacts of solar PV installation. Specifically, let's use the <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_CORINE_V20_100m#description">Copernicus CORINE Land Cover</a> product for 2018 and the <a href="https://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCover_v100">ESA WorldCover</a> product.</p>
 
 </div>
@@ -16959,7 +16977,8 @@ I've made a geojson of port meadow using <a href="http://geojson.io/#map=14/51.7
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Tutorial-4:-Spatial-Regression">Tutorial 4: Spatial Regression<a class="anchor-link" href="#Tutorial-4:-Spatial-Regression">&#182;</a></h1>
+<h1 id="Tutorial-4:-Spatial-Regression">Tutorial 4: Spatial Regression<a class="anchor-link" href="#Tutorial-4:-Spatial-Regression">&#182;</a></h1><p><a id='tutorial-4'></a></p>
+
 </div>
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
